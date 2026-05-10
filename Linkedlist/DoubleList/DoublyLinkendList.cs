@@ -9,7 +9,7 @@ public class DoublyLinkedList<T> : ILinkedList<T> where T : IComparable<T>
 
     public bool IsEmpty => _head == null;
 
-    // Inserts element keeping ascending order
+    // Inserts element keeping ascending order //
     public void Add(T data)
     {
         var newNode = new Node<T>(data);

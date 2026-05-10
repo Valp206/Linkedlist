@@ -15,7 +15,7 @@ while (answer != "10")
     Console.WriteLine("7. Exists");
     Console.WriteLine("8. Remove first occurrence");
     Console.WriteLine("9. Remove all occurrences");
-    Console.WriteLine("10. Exit");
+    Console.WriteLine("0. Exit");
     Console.Write("Choose an option: ");
     answer = Console.ReadLine() ?? "10";
 
@@ -64,7 +64,7 @@ while (answer != "10")
             var remAll = Console.ReadLine() ?? string.Empty;
             list.RemoveAll(remAll);
             break;
-        case "10":
+        case "0":
             Console.WriteLine("Goodbye!");
             break;
         default:
